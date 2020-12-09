@@ -1,0 +1,20 @@
+.body {
+  width: 2000px;
+}
+
+.sl {
+  width: 1000px;
+  padding: 0;
+  position: center;
+}
+
+.a {
+  max-width: 100%;
+}
+
+.carousel-inner {
+  width: 1000px;
+  height: 300px;
+  border-radius: 30px;
+}
+

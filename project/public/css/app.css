@@ -50,14 +50,14 @@ footer {
 }
 
 .bucket {
-  border: 1px solid #FF6900;
+  border: 1px solid #fff;
   margin-top: 10px;
   position: relative;
   float: right;
 }
 
 .bucket:hover {
-  background: #FF6900;
+  background: #fff;
 }
 
 .toRight {
@@ -75,7 +75,9 @@ footer {
 }
 
 .thead {
-  background: #FF6900;
+  background: #262626;
+  font-color: grey;
+  color: #fff;
 }
 
 .inc {

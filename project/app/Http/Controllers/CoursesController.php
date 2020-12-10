@@ -12,14 +12,14 @@ class CoursesController extends Controller
         $this->middleware('auth');
     }
 	
-    public function getData()
+    public function getData() // getting data from table 
     {
         $courses = DB::table('courses')->get();
 		$courses_type = DB::table('courses_type')->get();
         return view('courses', compact('courses', 'courses_type'));
     }
 
-    public function insert(Request $request) {
+    public function insert(Request $request) { //inserting data to table 
     	$size = $request->input('size');
     	$name = $request->input('coursesName');
     	$uid = $request->user()->id;
@@ -40,13 +40,13 @@ class CoursesController extends Controller
     	return redirect()->back();	
     }
 
-    public function getOrders() {
+    public function getOrders() { // getting data from table 
     	$order = DB::table('order')->get();
 
     	return view('basket', compact('order'));
     }
 
-    public function inc($id) {
+    public function inc($id) { // changing table data 
     	DB::table('order')
             ->where('id', $id)
             ->increment('amount');
@@ -54,7 +54,7 @@ class CoursesController extends Controller
         return redirect()->back();
     }
     
-    public function dec($id) {
+    public function dec($id) { // changing table data 
     	
     	DB::table('order')
             ->where('id', $id)

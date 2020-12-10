@@ -107,7 +107,7 @@ $('.carousel').carousel({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\adile\Documents\laravel\project\resources\js\home.js */"./resources/js/home.js");
+module.exports = __webpack_require__(/*! C:\Users\adile\Documents\laravel\EL\project\resources\js\home.js */"./resources/js/home.js");
 
 
 /***/ })
